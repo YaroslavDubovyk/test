@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+      meta(charset="UTF-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible", content="ie=edge")
+      title Test
+      link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.2/css/all.css', integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay', crossorigin='anonymous')
+      link(rel="stylesheet", href="./css/bootstrap.css")
+
+  body
+    header.site-header
+      .container
+        .header-top-row.justify-content-end.pb-sm-4.d-none.d-sm-flex
+          a.header-link(href="#") Соискателю
+        .row.p-3.p-sm-0.pb-sm-4.justify-content-between.align-items-center
+          .navbar-brand
+            a.header-logo(href='#')
+              img.d-none.d-sm-block(src="img/logo.png", alt="logo" width='150' height="50")
+              img.d-sm-none(src="img/mobile-logo.png", alt="logo" width='40' height="40")
+          nav.nav.align-items-center.font-weight-bold.header-menu.justify-content-end
+            a.nav-link(href="#")
+              span.d-none.d-sm-block Найти Вакансии
+              span.d-sm-none.d-flex.mob-link.vacancy.align-items-center Вакансии
+            a.nav-link(href="#")
+              span.d-none.d-sm-block Добавить вакансию
+              span.d-sm-none.d-flex.mob-link.cv.align-items-center Резюме
+            a.nav-link.dark(href="#")
+              span.d-none.d-sm-block Реактор
+              span.d-sm-none.d-flex.mob-link.login.align-items-center.text-primary  Войти
+     
+    section.main-section
+      .container
+        .row
+          .col-12
+            a(href="#").personal-section-link.d-inline-block Личный раздел
+          .col-12
+            h2.title Вакансии и откликики
+              span(data-toggle='popover', data-trigger="hover" data-placement="top" title='Some title', data-content="Some content")
+                i.icon-info
+          .col-12
+            p.description Lorem ipsum 
+            p.description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae accusamus eligendi quasi libero numquam expedita esse neque est culpa doloribus non architecto animi maiores alias consequuntur, soluta rerum ut dolore!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae accusamus eligendi quasi libero numquam expedita esse neque est culpa doloribus non architecto animi maiores alias consequuntur, soluta rerum ut dolore!
+          .col-12.justify-content-start.create-vacancy
+            button.btn.btn-success.mr-3.text-white Создать вакансию
+            span.text-success.d-block.d-sm-inline.mt-2.mt-sm-0 В наличии 
+              a.publications-link.text-success(href="#").link 1 вакансия   
+
+
+    footer.site-footer
+      .container
+        .row
+          .col-12.col-md-10
+            div.dropdown.footer-dropdown.mb-10
+              a.dropdown-toggle.language-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Русский
+              .dropdown-menu
+                a.dropdown-item(href='#') Русский 
+                a.dropdown-item(href='#') Украинский
+                a.dropdown-item(href='#') Английский
+            ul.list-inline.footer-list.mb-10
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") Ресурсы   
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") Контакты
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") О нас
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") Новости сайта
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") Условия использования      
+            .footer-copyright © 2006–2019 Work.ua. Сайт поиска работы №1 в Украине.
+          .col-12.col-md-2.text-md-right.mt-2.mt-sm-0
+            button.btn.btn-outline-primary Соискателю   
+        .row.footer-bottom-row.justify-content-between.d-none.d-md-flex
+          .col-4
+            .company.text-muted
+              | Сделано в компании «
+              a.text-danger(href='https://www.reactor.com.ua/', target='_blank') Реактор
+              | ».
+          .col-8.text-right
+            ul.list-inline.footer-list
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") Образование    
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") Тренинги
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") Клавиатурный тренажер
+              li.list-inline-item.mr-0.footer-list-item
+                a.footer-link(href="#") Typing tutor
+  script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+  script.
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });            
+              
+
+
+              

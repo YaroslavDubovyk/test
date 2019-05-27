@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="22px" height="23px" viewBox="0 0 22 23" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Шар_1">
+    <path d="M11 2.8179C15.549 2.8179 19.25 6.61033 19.25 11.2716C19.25 15.9329 15.549 19.7253 11 19.7253C6.45104 19.7253 2.75 15.9329 2.75 11.2716C2.75 6.61033 6.45104 2.8179 11 2.8179L11 2.8179ZM11 0C4.92479 0 0 5.04639 0 11.2716C0 17.4968 4.92479 22.5432 11 22.5432C17.0752 22.5432 22 17.4968 22 11.2716C22 5.04639 17.0752 0 11 0L11 0L11 0Z" id="Shape" fill="#00A1F1" stroke="none" />
+    <path d="M11 4.125L6.875 4.125L6.875 0L4.125 0L4.125 4.125L0 4.125L0 6.875L4.125 6.875L4.125 11L6.875 11L6.875 6.875L11 6.875L11 4.125Z" transform="translate(5.5 5.771605)" id="Shape" fill="#00A1F1" stroke="none" />
+  </g>
+</svg>

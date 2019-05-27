@@ -1,0 +1,145 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>buttons.md</title>
+      </head>
+      <body>
+        <hr>
+<p>layout: docs
+title: Buttons
+description: Use Bootstrap&#39;s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+group: components</p>
+<h2 id="toc-true">toc: true</h2>
+<h2 id="examples">Examples</h2>
+<p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+<p>{% capture example %}
+{% for color in site.data.theme-colors %}</p>
+<p><button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}</p>
+<p><button type="button" class="btn btn-link">Link</button>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<p>{% include callout-warning-color-assistive-technologies.md %}</p>
+<h2 id="button-tags">Button tags</h2>
+<p>The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
+<p>When using button classes on <code>&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <code>role=&quot;button&quot;</code> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+<p>{% capture example %}
+<a class="btn btn-primary" href="#" role="button">Link</a></p>
+<p><button class="btn btn-primary" type="submit">Button</button></p>
+<p><input class="btn btn-primary" type="button" value="Input"></p>
+<p><input class="btn btn-primary" type="submit" value="Submit"></p>
+<p><input class="btn btn-primary" type="reset" value="Reset">
+{% endcapture %}
+{% include example.html content=example %}</p>
+<h2 id="outline-buttons">Outline buttons</h2>
+<p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+<p>{% capture example %}
+{% for color in site.data.theme-colors %}</p>
+<p><button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
+{% endcapture %}
+{% include example.html content=example %}</p>
+<h2 id="sizes">Sizes</h2>
+<p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
+<p>{% capture example %}</p>
+<p><button type="button" class="btn btn-primary btn-lg">Large button</button></p>
+<p><button type="button" class="btn btn-secondary btn-lg">Large button</button>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<p>{% capture example %}</p>
+<p><button type="button" class="btn btn-primary btn-sm">Small button</button></p>
+<p><button type="button" class="btn btn-secondary btn-sm">Small button</button>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<p>Create block level buttons—those that span the full width of a parent—by adding <code>.btn-block</code>.</p>
+<p>{% capture example %}</p>
+<p><button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button></p>
+<p><button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<h2 id="active-state">Active state</h2>
+<p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. <strong>There&#39;s no need to add a class to <code>&lt;button&gt;</code>s as they use a pseudo-class</strong>. However, you can still force the same active appearance with <code>.active</code> (and include the <code>aria-pressed=&quot;true&quot;</code> attribute) should you need to replicate the state programmatically.</p>
+<p>{% capture example %}
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<h2 id="disabled-state">Disabled state</h2>
+<p>Make buttons look inactive by adding the <code>disabled</code> boolean attribute to any <code>&lt;button&gt;</code> element.</p>
+<p>{% capture example %}</p>
+<p><button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button></p>
+<p><button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<p>Disabled buttons using the <code>&lt;a&gt;</code> element behave a bit different:</p>
+<ul>
+<li><code>&lt;a&gt;</code>s don&#39;t support the <code>disabled</code> attribute, so you must add the <code>.disabled</code> class to make it visually appear disabled.</li>
+<li>Some future-friendly styles are included to disable all <code>pointer-events</code> on anchor buttons. In browsers which support that property, you won&#39;t see the disabled cursor at all.</li>
+<li>Disabled buttons should include the <code>aria-disabled=&quot;true&quot;</code> attribute to indicate the state of the element to assistive technologies.</li>
+</ul>
+<p>{% capture example %}
+<a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<p>{% capture callout %}</p>
+<h5 id="link-functionality-caveat">Link functionality caveat</h5>
+<p>The <code>.disabled</code> class uses <code>pointer-events: none</code> to try to disable the link functionality of <code>&lt;a&gt;</code>s, but that CSS property is not yet standardized. In addition, even in browsers that do support <code>pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, add a <code>tabindex=&quot;-1&quot;</code> attribute on these links (to prevent them from receiving keyboard focus) and use custom JavaScript to disable their functionality.
+{% endcapture %}
+{% include callout.html content=callout type=&quot;warning&quot; %}</p>
+<h2 id="button-plugin">Button plugin</h2>
+<p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
+<h3 id="toggle-states">Toggle states</h3>
+<p>Add <code>data-toggle=&quot;button&quot;</code> to toggle a button&#39;s <code>active</code> state. If you&#39;re pre-toggling a button, you must manually add the <code>.active</code> class <strong>and</strong> <code>aria-pressed=&quot;true&quot;</code> to the <code>&lt;button&gt;</code>.</p>
+<p>{% capture example %}</p>
+<p><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Single toggle
+</button>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<h3 id="checkbox-and-radio-buttons">Checkbox and radio buttons</h3>
+<p>Bootstrap&#39;s <code>.button</code> styles can be applied to other elements, such as <code>&lt;label&gt;</code>s, to provide checkbox or radio style button toggling. Add <code>data-toggle=&quot;buttons&quot;</code> to a <code>.btn-group</code> containing those modified buttons to enable their toggling behavior via JavaScript and add <code>.btn-group-toggle</code> to style the <code>&lt;input&gt;</code>s within your buttons. <strong>Note that you can create single input-powered buttons or groups of them.</strong></p>
+<p>The checked state for these buttons is <strong>only updated via <code>click</code> event</strong> on the button. If you use another method to update the input—e.g., with <code>&lt;input type=&quot;reset&quot;&gt;</code> or by manually applying the input&#39;s <code>checked</code> property—you&#39;ll need to toggle <code>.active</code> on the <code>&lt;label&gt;</code> manually.</p>
+<p>Note that pre-checked buttons require you to manually add the <code>.active</code> class to the input&#39;s <code>&lt;label&gt;</code>.</p>
+<p>{% capture example %}</p>
+<p><div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="checkbox" checked autocomplete="off"> Checked
+  </label>
+</div>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<p>{% capture example %}</p>
+<p><div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+  </label>
+</div>
+{% endcapture %}
+{% include example.html content=example %}</p>
+<h3 id="methods">Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$().button(&#39;toggle&#39;)</code></td>
+<td>Toggles push state. Gives the button the appearance that it has been activated.</td>
+</tr>
+<tr>
+<td><code>$().button(&#39;dispose&#39;)</code></td>
+<td>Destroys an element&#39;s button.</td>
+</tr>
+</tbody>
+</table>
+
+      </body>
+    </html>

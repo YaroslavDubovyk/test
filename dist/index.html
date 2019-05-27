@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Test</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="./css/bootstrap.css"/>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container">
+				<div class="header-top-row justify-content-end pb-sm-4 d-none d-sm-flex"><a class="header-link" href="#">Соискателю</a></div>
+				<div class="row p-3 p-sm-0 pb-sm-4 justify-content-between align-items-center">
+					<div class="navbar-brand"><a class="header-logo" href="#"><img class="d-none d-sm-block" src="img/logo.png" alt="logo" width="150" height="50"/><img class="d-sm-none" src="img/mobile-logo.png" alt="logo" width="40" height="40"/></a></div>
+					<nav class="nav align-items-center font-weight-bold header-menu justify-content-end"><a class="nav-link" href="#"><span class="d-none d-sm-block">Найти Вакансии</span><span class="d-sm-none d-flex mob-link vacancy align-items-center">Вакансии</span></a><a class="nav-link" href="#"><span class="d-none d-sm-block">Добавить вакансию</span><span class="d-sm-none d-flex mob-link cv align-items-center">Резюме</span></a><a class="nav-link dark" href="#"><span class="d-none d-sm-block">Реактор</span><span class="d-sm-none d-flex mob-link login align-items-center text-primary"> Войти</span></a></nav>
+				</div>
+			</div>
+		</header>
+		<section class="main-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12"><a class="personal-section-link d-inline-block" href="#">Личный раздел</a></div>
+					<div class="col-12">
+						<h2 class="title">Вакансии и откликики<span data-toggle="popover" data-trigger="hover" data-placement="top" title="Some title" data-content="Some content"><i class="icon-info"></i></span></h2>
+					</div>
+				</div>
+				<div class="row search-vacancy-row">
+					<div class="col-lg-6 col-12 justify-content-start create-vacancy">
+						<button class="btn btn-success text-white mr-3 my-3 my-sm-0 d-block d-sm-inline">Создать вакансию</button><a class="publications-link text-success link" href="#" data-toggle="popover" data-html="true" data-placement="bottom" data-content="&lt;div class=&quot;popover-row d-flex justify-content-between&quot;&gt;                &lt;div&gt;Standart&lt;/div&gt;                &lt;div&gt;14 из 23&lt;/div&gt;                &lt;/div&gt;                &lt;div class=&quot;popover-row d-flex justify-content-between&quot;&gt;                &lt;div&gt;Standart Plus&lt;/div&gt;                &lt;div&gt;81 из 323&lt;/div&gt;                &lt;/div&gt;                &lt;div class=&quot;popover-row d-flex justify-content-between&quot;&gt;                &lt;div&gt;Standart Plus&lt;/div&gt;                &lt;div&gt;81 из 323&lt;/div&gt;                &lt;/div&gt;                &lt;div class=&quot;popover-row d-flex justify-content-between&quot;&gt;                &lt;div&gt;Premium&lt;/div&gt;                &lt;div&gt;81 из 323&lt;/div&gt;                &lt;/div&gt;                &lt;div class=&quot;popover-row d-flex justify-content-between&quot;&gt;                &lt;div&gt;Анонимная&lt;/div&gt;                &lt;div&gt;81 из 323&lt;/div&gt;                &lt;/div&gt;                &lt;div&gt;                &lt;div&gt;&lt;a class=&quot;popover-link&quot; href=&quot;#&quot;&gt;Подробнее о публикациях&lt;/a&gt;&lt;br/&gt;&lt;a class=&quot;popover-link&quot; href=&quot;#&quot;&gt;Купит публикации от 249грн&lt;/a&gt;&lt;/div&gt;                &lt;/div&gt;">Доступно 20 из 924 публикаций </a>
+					</div>
+					<div class="col-lg-6 col-12 d-flex align-items-center justify-content-start justify-content-lg-end"><a class="search-link" href="#">Только размещенные</a>
+						<form class="d-flex search-form">
+							<input class="mr-sm-2 search-input form-control" type="search" placeholder="Поиск" aria-label="Search"/>
+							<button class="btn search-btn d-inline" type="submit"><i class="search-icon fas fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+				<div class="row py-3">
+					<div class="col-12">
+						<div class="user"><a class="user-name align-items-center d-flex" href="#"> Андрей Боровик <span class="icon-info" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Some title" data-content="Some content"></span><span class="user-count">4</span></a></div>
+					</div>
+				</div>
+				<div class="row vacancy-item">
+					<div class="col-sm-10 col-12">
+						<div class="vacancy-title font-weight-bold text-primary">Артист по работе с клиентами<span class="vacancy-salary font-weight-normal text-dark">, 15000 грн*</span></div>
+						<div class="vacancy-location">Днепр</div>
+						<div class="vacancy-date-info"><span class="badge badge-warning text-danger"> Premium до 22 октября</span><br class="d-block d-sm-none"/><span class="vacancy-date">10 октября </span>- <span class="vacancy-date">10 ноября</span></div>
+						<ul class="list-inline d-flex vacancy-list my-3 my-sm-0">
+							<li class="list-inline-item vacancy-list-item mr-0"><a href="#"> Подобрать резюме</a></li>
+							<li class="list-inline-item vacancy-list-item mr-0 d-none d-lg-block"><a href="#"> Продлить Premium</a></li>
+							<li class="list-inline-item vacancy-list-item mr-0 d-none d-lg-block"><a href="#"> Обновтить дату публикации</a></li>
+							<li class="list-inline-item vacancy-list-item mr-0 d-none d-lg-block"><a href="#"> Еще</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 col-12">
+						<div class="response text-primary"><a class="response-count font-weight-bold" href="#">378<span class="d-block response-text">откликов</span></a><span class="new-response-count badge">23 </span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-10">
+						<div class="dropdown footer-dropdown mb-10"><a class="dropdown-toggle language-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Русский</a>
+							<div class="dropdown-menu"><a class="dropdown-item" href="#">Русский </a><a class="dropdown-item" href="#">Украинский</a><a class="dropdown-item" href="#">Английский</a></div>
+						</div>
+						<ul class="list-inline footer-list mb-10">
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">Ресурсы   </a></li>
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">Контакты</a></li>
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">О нас</a></li>
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">Новости сайта</a></li>
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">Условия использования      </a></li>
+						</ul>
+						<div class="footer-copyright">© 2006–2019 Work.ua. Сайт поиска работы №1 в Украине.</div>
+					</div>
+					<div class="col-12 col-md-2 text-md-right mt-2 mt-sm-0">
+						<button class="btn btn-outline-primary">Соискателю   </button>
+					</div>
+				</div>
+				<div class="row footer-bottom-row justify-content-between d-none d-md-flex">
+					<div class="col-4">
+						<div class="company text-muted">Сделано в компании «<a class="text-danger" href="https://www.reactor.com.ua/" target="_blank">Реактор</a>».</div>
+					</div>
+					<div class="col-8 text-right">
+						<ul class="list-inline footer-list">
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">Образование    </a></li>
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">Тренинги</a></li>
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">Клавиатурный тренажер</a></li>
+							<li class="list-inline-item mr-0 footer-list-item"><a class="footer-link" href="#">Typing tutor</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+		  $('[data-toggle="popover"]').popover();
+		});            
+		
+		          
+		
+		
+		          
+	</script>
+</html>

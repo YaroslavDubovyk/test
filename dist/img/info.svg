@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="glyphicon_info-sign-e086">
+    <g id="Шар_1">
+      <path d="M9 18C4.03733 18 0 13.9623 0 9C0 4.03733 4.03733 0 9 0C13.9627 0 18 4.03733 18 9C18 13.9623 13.9627 18 9 18L9 18ZM9 1.00167C4.589 1.00167 1 4.58967 1 9C1 13.4103 4.589 16.9983 9 16.9983C13.411 16.9983 17 13.4103 17 9C17 4.58967 13.411 1.00167 9 1.00167L9 1.00167Z" id="Shape" fill="#008ED5" stroke="none" />
+      <g id="Group" transform="translate(6.666667 3.333333)">
+        <path d="M3.33867 6.677L3.33867 1.045L3.33867 0L0 0L0 1.00133L1.00167 1.00133L1.00167 6.677L0 6.677L0 7.67833L4.34033 7.67833L4.34033 6.677L3.33867 6.677Z" transform="translate(0.138 3.663667)" id="Shape" fill="#008ED5" stroke="none" />
+        <path d="M2.73633 1.368C2.73633 2.125 2.12367 2.736 1.36767 2.736C0.612 2.736 0 2.125 0 1.368C0 0.611 0.612333 0 1.36767 0C2.12367 0 2.73633 0.611 2.73633 1.368L2.73633 1.368Z" transform="translate(0.9593334 0.057)" id="Shape" fill="#008ED5" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>
